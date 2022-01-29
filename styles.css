@@ -1,0 +1,72 @@
+﻿body{
+}
+
+h1{
+    border: 1px solid grey;
+    /* font-family: 'Avengero'; */
+}
+
+@font-face {
+  font-family: 'IronMan';
+  src: url('./fonts/iron-man-of-war-2-ncv-font/IronManOfWar2Ncv-E85l.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Avengeance';
+  src: url('./fonts/avengeance-font/Avengeance-YolO.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AvengeanceDisassembledRegular';
+  src: url('./fonts/avengero-disassembled-font/AvengeroDisassembledRegular-nRvd4.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avengero';
+  src: url('./fonts/avengero-font/AvengeroRegular-zvgl.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GalacticVanguardianNcv';
+  src: url('./fonts/galactic-vanguardian-font/GalacticVanguardianNcv-myVP.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeroesAssembleBoldExpandtalic';
+  src: url('./fonts/heroes-assemble-font/HeroesAssembleBoldExpandtalic-qEn1.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MarvelRegular';
+  src: url('./fonts/marvel-font/MarvelRegular-Dj83.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'StarGuard';
+  src: url('./fonts/star-guard-font/StarGuard3D-Pelg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Stark';
+  src: url('./fonts/stark-font/Stark-6p31.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'EndGame';
+  src: url('./fonts/end-gamer-font/EndgamerRegular-6Odv.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HallOfHeroes';
+  src: url('./fonts/hall-of-heroes-font/HallOfHeroes-BErn.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IronManOfWar';
+  src: url('./fonts/iron-man-of-war-font/IronManOfWar001ANcv-6d2Y.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'XFighters';
+  src: url('./fonts/x-fighters-font/XFightersRegular-3dlz.ttf') format('truetype');
+}

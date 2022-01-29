@@ -1,0 +1,99 @@
+﻿<!--
+    NAMETAG SHEET
+    This will make nametags that are 2.5cm x 10cm and 5cm x 12cm
+
+
+-->
+
+<!-- <h1 style="display: inline-block; height: 50mm; width: 110mm; border:1px dashed black; padding:5mm; font-size:18mm; text-align: right;">
+フォドロシー</br>ジョン
+</h1> -->
+<head>
+    <link rel='stylesheet' type='text/css' href='./styles.css'/>
+
+</head>
+<body onload="populateLabels()">
+    <h1 style="display: inline-block; height: 50mm; width: 110mm; border:1px dashed black; padding:5mm; font-size:18mm; text-align: right;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+
+    <h1 style="display:inline-block; height: 25mm; width: 90mm; border: 1px dashed black; padding: 0mm 5mm; font-size: 9mm; text-align: center;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+    <h1 style="display: inline-block; height: 50mm; width: 110mm; border:1px dashed black; padding:5mm; font-size:18mm; text-align: right;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+
+    <h1 style="display:inline-block; height: 25mm; width: 90mm; border: 1px dashed black; padding: 0mm 5mm; font-size: 9mm; text-align: center;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+    <h1 style="display: inline-block; height: 50mm; width: 110mm; border:1px dashed black; padding:5mm; font-size:18mm; text-align: right;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+
+    <h1 style="display:inline-block; height: 25mm; width: 90mm; border: 1px dashed black; padding: 0mm 5mm; font-size: 9mm; text-align: center;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+    <h1 style="display: inline-block; height: 50mm; width: 110mm; border:1px dashed black; padding:5mm; font-size:18mm; text-align: right;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+
+    <h1 style="display:inline-block; height: 25mm; width: 90mm; border: 1px dashed black; padding: 0mm 5mm; font-size: 9mm; text-align: center;">
+        <span class='last-name'>フォドロシー</span></br><span class='first-name'>ジョン</span>
+    </h1>
+    <select id='select-font'></select>
+</body>
+<script>
+    const FIRST_NAME = 'We love you.';
+    const LAST_NAME = 'Yuuka Sensei,'
+    function populateLabels() {
+        const lastNames = document.getElementsByClassName('last-name');
+        const firstNames = document.getElementsByClassName('first-name');
+        for(let element of lastNames) {
+            element.textContent = LAST_NAME;
+        }
+        for(let element of firstNames) {
+            element.textContent = FIRST_NAME;
+        }
+        populateSelector();
+
+    }
+
+    function populateSelector() {
+        const selector = document.getElementById('select-font');
+        fontFamilies.forEach(curFont => {
+            const newOption = document.createElement('option');
+            newOption.value = curFont;
+            newOption.textContent = curFont
+            selector.appendChild(newOption);
+        })
+        selector.addEventListener('change', function(evt) {
+            const newStyle = evt.currentTarget.value;
+            const lastNames = document.getElementsByClassName('last-name');
+            for(let element of lastNames) {
+                element.style.fontFamily = newStyle;
+            }
+            const firstNames = document.getElementsByClassName('first-name');
+            for(let element of firstNames) {
+                element.style.fontFamily = newStyle;
+            }
+        })
+    }
+
+    const fontFamilies = [
+        'IronMan',
+        'Avengeance',
+        'AvengeanceDisassembledRegular',
+        'Avengero',
+        'GalacticVanguardianNcv',
+        'HeroesAssembleBoldExpandtalic',
+        'MarvelRegular',
+        'StarGuard',
+        'Stark',
+        'EndGame',
+        'HallOfHeroes',
+        'IronManOfWar',
+        'XFighters'
+    ]
+
+</script>
